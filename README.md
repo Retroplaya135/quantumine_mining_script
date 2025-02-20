@@ -46,3 +46,19 @@ Requirements
     * rich
     * urllib3
 3. The Playwright browsers.
+
+Highly Detailed Installation Steps
+
+Below are very explicit instructions that allow any user or developer to set up Quantumine Scraper from scratch without guesswork.
+
+** Ensure System Requirements
+* Python 3.8 or above.
+ standard Python package installer).
+
+* A functioning internet connection to install dependencies and playwright browsers.
+
+** Obtain the Code
+
+If using GitHub (for example), clone the repository:
+
+git clone https://github.com/Retroplaya135/quantumine_mining_script/
