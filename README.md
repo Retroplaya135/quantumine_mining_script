@@ -95,3 +95,9 @@ This fetches and installs the core packages:
 --> rich
 --> urllib3
 --> Others specified in the file (if any).
+
+Install Playwright Browsers:
+This step downloads the actual browser executables (Chromium, Firefox, WebKit), although the script typically defaults to Chromium. Run:
+```
+playwright install
+```
