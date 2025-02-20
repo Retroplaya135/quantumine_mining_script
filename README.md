@@ -101,3 +101,9 @@ This step downloads the actual browser executables (Chromium, Firefox, WebKit), 
 ```
 playwright install
 ```
+
+Verify that this completes without error.
+Optional: Modify or Confirm Proxy Configuration
+If you plan to use proxies, create or update a file (e.g., proxies.txt) where each line contains a proxy address in the format ip:port or hostname:port.
+If you do not need proxies, you can skip configuring them.
+
