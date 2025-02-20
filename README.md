@@ -113,3 +113,21 @@ Execute:
 python quantumine_scraper.py --help
 ```
 
+Usage Examples and Workflow
+
+Command-Line Flags
+
+```
+usage: quantumine_scraper.py [-h] -u URLS [URLS ...] [-d] [-f {csv,json}] [-p PROXY_FILE] [-t TIMEOUT]
+
+optional arguments:
+  -h, --help                show this help message and exit
+  -u URLS [URLS ...]        target URLs to scrape (one or more)
+  -d, --dynamic             enable JavaScript rendering via Playwright
+  -f {csv,json}, --format {csv,json}
+                            specify output format (defaults to csv)
+  -p PROXY_FILE, --proxy-file PROXY_FILE
+                            file containing proxy servers (default: proxies.txt)
+  -t TIMEOUT, --timeout TIMEOUT
+                            request timeout in seconds (default: 30)
+```
