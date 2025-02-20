@@ -107,3 +107,9 @@ Optional: Modify or Confirm Proxy Configuration
 If you plan to use proxies, create or update a file (e.g., proxies.txt) where each line contains a proxy address in the format ip:port or hostname:port.
 If you do not need proxies, you can skip configuring them.
 
+Test the Installation
+Execute:
+```
+python quantumine_scraper.py --help
+```
+
