@@ -34,3 +34,6 @@ The scraper can optionally use a pool of proxies for requests, verifying their h
     * By default, saves results to output/results_<timestamp>.csv.
     * Can also save to JSON if --format json is specified.
     * Results are stored in an output/ directory which is automatically created if it does not exist.
+
+The scraper can optionally use a pool of proxies for requests, verifying their health before usage. It supports rotating proxies automatically. The script allows saving extracted data in JSON or CSV format.
+
