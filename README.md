@@ -62,3 +62,6 @@ Below are very explicit instructions that allow any user or developer to set up 
 If using GitHub (for example), clone the repository:
 
 git clone https://github.com/Retroplaya135/quantumine_mining_script/
+cd quantumine_mining_script
+
+
