@@ -37,3 +37,12 @@ The scraper can optionally use a pool of proxies for requests, verifying their h
 
 The scraper can optionally use a pool of proxies for requests, verifying their health before usage. It supports rotating proxies automatically. The script allows saving extracted data in JSON or CSV format.
 
+Requirements
+1. Python 3.8 or later.
+2. The following Python packages:
+    * requests
+    * beautifulsoup4
+    * playwright
+    * rich
+    * urllib3
+3. The Playwright browsers.
