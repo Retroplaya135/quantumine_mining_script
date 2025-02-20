@@ -9,3 +9,6 @@ Description
 #### Playwright for dynamic (JavaScript-rendered) content.
 #### Rich for optional progress bar visualization.
 #### Logging for both console and file logs.
+
+The scraper can optionally use a pool of proxies for requests, verifying their health before usage. It supports rotating proxies automatically. The script allows saving extracted data in JSON or CSV format.
+
