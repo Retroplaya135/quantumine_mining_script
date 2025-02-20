@@ -65,3 +65,19 @@ git clone https://github.com/Retroplaya135/quantumine_mining_script/
 cd quantumine_mining_script
 
 
+Create and Activate a Virtual Environment
+This step isolates dependencies from your system-wide Python installations.
+
+On Linux/Mac:
+```
+python3 -m venv venv
+source venv/bin/activate
+```
+
+On Windows (Command Prompt):
+
+```
+python -m venv venv
+venv\Scripts\activate
+```
+
