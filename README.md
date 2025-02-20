@@ -86,3 +86,12 @@ venv\Scripts\activate
 ```
 pip install -r requirements.txt
 ```
+
+This fetches and installs the core packages:
+
+--> requests
+--> beautifulsoup4
+--> playwright
+--> rich
+--> urllib3
+--> Others specified in the file (if any).
