@@ -177,3 +177,5 @@ Changing Timeout
 ```
 python quantumine_scraper.py -u https://example.com -t 60
 ```
+Increases the per-request timeout to 60 seconds.
+
