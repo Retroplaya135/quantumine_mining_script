@@ -154,3 +154,7 @@ Dynamic (JavaScript) Scraping
 ```
 python quantumine_scraper.py -u https://example.com -d
 ```
+
+Launches a headless Chromium instance.
+Navigates to the specified URL and waits for the page to render.
+Extracts anchor tags just like in static mode, but on a fully rendered DOM.
