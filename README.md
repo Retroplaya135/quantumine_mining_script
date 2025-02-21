@@ -197,4 +197,8 @@ class QuantumProxyManager:
         # filters out invalid or non-responsive proxies
         # maintains a rotation cycle
 ```
+```
+    method get_next_proxy():
+        # returns next valid proxy from the cycle
+```
 
