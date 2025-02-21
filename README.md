@@ -208,3 +208,10 @@ class QuantumProxyManager:
 * _scrape_static: Uses the requests.Session object to fetch HTML content and parse it with BeautifulSoup.
 _scrape_dynamic: Creates a new browser context, optionally sets a proxy, navigates to the URL, executes minimal stealth * JavaScript modifications, and then obtains the DOM as HTML for parsing.
 harvest_data (placeholder for ML integration): The current default is simple anchor extraction. Users can replace or * * * enhance this method to utilize machine learning-based detection of desired elements (referred to as the "Neuroscraping Engine"). At the moment, it is a placeholder that must be adapted to suit advanced extraction needs.
+
+
+Customization and Placeholder Logic
+
+* Machine Learning Integration: In harvest_data, you might include a classifier or named entity recognition system to dynamically identify product titles, prices, or relevant text blocks. The current snippet is purely a placeholder showing how an expanded method might be plugged in.
+* Proxy Validation: The _is_valid_proxy method is intentionally simplistic. For production systems, you may want to integrate more rigorous tests (location-based checks, speed tests, or usage-based blacklisting).
+* Scraping Logic: If you need advanced selectors (e.g., scraping tables, forms, or JSON embedded in the DOM), adapt _scrape_static, _scrape_dynamic, or the harvest_data method. You could also intercept network requests in Playwright to capture XHR data.
