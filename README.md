@@ -148,3 +148,9 @@ python quantumine_scraper.py -u https://example.com
 ----> Fetches the HTML of https://example.com using Requests.
 ----> Extracts all anchor tags with href attributes.
 ----> Saves the results to output/results_<timestamp>.csv by default.
+
+Dynamic (JavaScript) Scraping
+
+```
+python quantumine_scraper.py -u https://example.com -d
+```
