@@ -205,3 +205,6 @@ class QuantumProxyManager:
 ## Explanation of Key Modules
 * _create_stealth_session: Creates a requests.Session object with custom headers and a retry strategy to handle common network errors and status codes that suggest transient failures.
 * _init_playwright: Launches a headless browser with certain command-line flags to reduce detection (for instance, disabling certain features that reveal automated contexts).
+* _scrape_static: Uses the requests.Session object to fetch HTML content and parse it with BeautifulSoup.
+_scrape_dynamic: Creates a new browser context, optionally sets a proxy, navigates to the URL, executes minimal stealth * JavaScript modifications, and then obtains the DOM as HTML for parsing.
+harvest_data (placeholder for ML integration): The current default is simple anchor extraction. Users can replace or * * * enhance this method to utilize machine learning-based detection of desired elements (referred to as the "Neuroscraping Engine"). At the moment, it is a placeholder that must be adapted to suit advanced extraction needs.
