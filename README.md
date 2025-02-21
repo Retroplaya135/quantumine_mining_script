@@ -173,3 +173,7 @@ Changing the Output Format to JSON
 ```
 Saves the extracted data to output/results_<timestamp>.json.
 
+Changing Timeout
+```
+python quantumine_scraper.py -u https://example.com -t 60
+```
