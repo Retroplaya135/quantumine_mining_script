@@ -226,3 +226,11 @@ A typical Linux-based system (e.g., Ubuntu 20.04) with Python 3.8+ installed.
 * Ensure enough RAM if you plan to run many concurrent Playwright sessions.
 Clone and Configure
   
+```
+git clone https://github.com/youruser/quantumine_scraper.git
+cd quantumine_scraper
+python -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
+playwright install
+```
