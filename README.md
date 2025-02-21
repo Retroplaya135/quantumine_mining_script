@@ -167,3 +167,7 @@ python quantumine_scraper.py -u https://example.com -p custom_proxies.txt
 Loads the proxy addresses from custom_proxies.txt.
 Validates them with a short request to https://api.ipify.org?format=json.
 Uses valid proxies in a rotation cycle.
+
+```
+Changing the Output Format to JSON
+```
