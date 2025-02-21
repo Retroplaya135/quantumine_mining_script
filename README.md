@@ -137,3 +137,10 @@ optional arguments:
   -t TIMEOUT, --timeout TIMEOUT
                             request timeout in seconds (default: 30)
 ```
+
+Basic Static Scraping
+
+
+```
+python quantumine_scraper.py -u https://example.com
+```
