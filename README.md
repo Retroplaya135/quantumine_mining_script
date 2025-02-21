@@ -171,3 +171,5 @@ Uses valid proxies in a rotation cycle.
 ```
 Changing the Output Format to JSON
 ```
+Saves the extracted data to output/results_<timestamp>.json.
+
