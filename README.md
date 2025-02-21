@@ -179,3 +179,15 @@ python quantumine_scraper.py -u https://example.com -t 60
 ```
 Increases the per-request timeout to 60 seconds.
 
+Internal Architecture Explanation
+
+Quantumine Scraper is composed of multiple classes and methods that cooperate. A simplified pseudo-code representation follows.
+
+```
+main():
+    args = parse_command_line_arguments()
+    config = create_configuration_dict(args)
+    scraper = TemporalScraper(config)
+    scraper.execute()
+```
+
