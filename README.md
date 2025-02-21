@@ -202,3 +202,6 @@ class QuantumProxyManager:
         # returns next valid proxy from the cycle
 ```
 
+## Explanation of Key Modules
+* _create_stealth_session: Creates a requests.Session object with custom headers and a retry strategy to handle common network errors and status codes that suggest transient failures.
+* _init_playwright: Launches a headless browser with certain command-line flags to reduce detection (for instance, disabling certain features that reveal automated contexts).
