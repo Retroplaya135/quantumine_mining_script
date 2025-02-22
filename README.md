@@ -438,6 +438,7 @@ Key Points:
 The timestamped file naming ensures unique filenames for each run.
 The format check allows switching between CSV and JSON based on user preference.
 
+---> Browser Initialization and Cleanup Flow (Dynamic Scraping)
 
 ```
 [Dynamic Mode Invoked]
