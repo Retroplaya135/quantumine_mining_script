@@ -397,3 +397,30 @@ Every external call (HTTP requests, page navigation) is wrapped in a try/except 
 The logging system records both successful operations and errors with timestamps.
 
 
+```
+[Aggregated Results Ready]
+       │
+       ▼
+[Call save_results()]
+       │
+       ▼
+[Check: Is Results Empty?]
+       │
+       ▼
+[Create Output Directory if Not Exists]
+       │
+       ▼
+[Generate Timestamped Filename]
+       │
+       ▼
+[Check Output Format (CSV or JSON)]
+       │
+       ├──────────── CSV ────────────┐
+       │                             │
+       ▼                             ▼
+[Write CSV File]             [Write JSON File]
+       │                             │
+       ▼                             ▼
+[File Saved in 'output/' Directory]
+```
+
