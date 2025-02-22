@@ -39,7 +39,7 @@ The scraper can optionally use a pool of proxies for requests, verifying their h
 
 ```
                        +----------------------------------+
-                       |      Quantumine Scraper        |
+                       |      Quantumine Scraper          |
                        | (Main Orchestration Script)      |
                        +----------------------------------+
                                      |
@@ -69,6 +69,8 @@ Uses the requests library to fetch HTML content and BeautifulSoup for parsing. T
 
 * Dynamic Scraping:
 Leverages Playwright for rendering JavaScript-driven pages. A headless Chromium instance is used to obtain fully rendered DOM content before parsing with BeautifulSoup.
+
+
 
 Requirements
 1. Python 3.8 or later.
@@ -153,6 +155,45 @@ python quantumine_scraper.py --help
 ```
 
 Usage Examples and Workflow
+
+```
+             +---------------------------+
+             |     main() Function       |
+             +---------------------------+
+                         |
+                         v
+             +---------------------------+
+             | parse_args() & Config     |
+             +---------------------------+
+                         |
+                         v
+             +---------------------------+
+             |  TemporalScraper Object   |
+             |   (Initialization)        |
+             +---------------------------+
+                         |
+                         v
+             +---------------------------+
+             |   Execute Scraping Loop   |
+             +---------------------------+
+                         |
+           +-------------+-------------+
+           |                           |
++----------v----------+       +--------v---------+
+| _scrape_static(url) |       | _scrape_dynamic(url) |
++---------------------+       +---------------------+
+           |                           |
+           +-------------+-------------+
+                         v
+             +---------------------------+
+             | harvest_data(soup)        |
+             +---------------------------+
+                         |
+                         v
+             +---------------------------+
+             |  save_results()           |
+             +---------------------------+
+```
 
 Command-Line Flags
 
