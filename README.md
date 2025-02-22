@@ -212,8 +212,24 @@ optional arguments:
                             request timeout in seconds (default: 30)
 ```
 
-Basic Static Scraping
+```
+[User CLI Input]
+       │
+       ▼
+[parse_args() Function]
+       │
+       ▼
+[Generate Configuration Dictionary]
+       │         ┌────────────────────┐
+       │         │Command-line Flags  │
+       │         │(URLs, timeout, etc.)│
+       │         └────────────────────┘
+       ▼
+[Initialize TemporalScraper(config)]
 
+
+Basic Static Scraping
+```
 
 ```
 python quantumine_scraper.py -u https://example.com
