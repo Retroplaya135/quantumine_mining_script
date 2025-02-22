@@ -37,6 +37,9 @@ The scraper can optionally use a pool of proxies for requests, verifying their h
 
 The scraper can optionally use a pool of proxies for requests, verifying their health before usage. It supports rotating proxies automatically. The script allows saving extracted data in JSON or CSV format.
 
+Static Scraping:
+Uses the requests library to fetch HTML content and BeautifulSoup for parsing. This method is effective for pages that deliver content in static HTML.
+
 Requirements
 1. Python 3.8 or later.
 2. The following Python packages:
