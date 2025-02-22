@@ -37,10 +37,10 @@ The scraper can optionally use a pool of proxies for requests, verifying their h
 
 The scraper can optionally use a pool of proxies for requests, verifying their health before usage. It supports rotating proxies automatically. The script allows saving extracted data in JSON or CSV format.
 
-Static Scraping:
+** Static Scraping:
 Uses the requests library to fetch HTML content and BeautifulSoup for parsing. This method is effective for pages that deliver content in static HTML.
 
-Dynamic Scraping:
+** Dynamic Scraping:
 Leverages Playwright for rendering JavaScript-driven pages. A headless Chromium instance is used to obtain fully rendered DOM content before parsing with BeautifulSoup.
 
 Requirements
