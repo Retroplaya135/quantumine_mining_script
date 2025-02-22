@@ -373,6 +373,8 @@ playwright install
 Error Handling and Logging Flow:
 Robust error handling is essential for long-running scraping jobs. This flow shows how exceptions are captured and logged.
 
+---> Error Handling and Logging Flow
+
 ```
 [Execute HTTP Request / Browser Navigation]
        │
@@ -402,6 +404,7 @@ Key Points:
 Every external call (HTTP requests, page navigation) is wrapped in a try/except block.
 The logging system records both successful operations and errors with timestamps.
 
+---> Output Saving and File Management Flow
 
 ```
 [Aggregated Results Ready]
