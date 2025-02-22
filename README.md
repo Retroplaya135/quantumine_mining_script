@@ -457,3 +457,7 @@ The format check allows switching between CSV and JSON based on user preference.
        ▼
 [Return HTML Content to Parser]
 ```
+Key Points:
+
+Proper cleanup (closing contexts) prevents resource leakage.
+Stealth JavaScript is executed immediately after navigatio
