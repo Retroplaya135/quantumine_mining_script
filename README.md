@@ -430,3 +430,30 @@ The timestamped file naming ensures unique filenames for each run.
 The format check allows switching between CSV and JSON based on user preference.
 
 
+```
+[Dynamic Mode Invoked]
+       │
+       ▼
+[Call _init_playwright()]
+       │
+       ▼
+[Launch Headless Browser with Stealth Args]
+       │
+       ▼
+[Create New Browser Context (Optional Proxy Setup)]
+       │
+       ▼
+[Open New Page and Navigate to URL]
+       │
+       ▼
+[Execute Stealth JavaScript (e.g., modify navigator.webdriver)]
+       │
+       ▼
+[Extract Page Content]
+       │
+       ▼
+[Close Browser Context]
+       │
+       ▼
+[Return HTML Content to Parser]
+```
