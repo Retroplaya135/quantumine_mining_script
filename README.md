@@ -363,3 +363,7 @@ source venv/bin/activate
 pip install -r requirements.txt
 playwright install
 ```
+
+Error Handling and Logging Flow:
+Robust error handling is essential for long-running scraping jobs. This flow shows how exceptions are captured and logged.
+
