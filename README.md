@@ -37,6 +37,8 @@ The scraper can optionally use a pool of proxies for requests, verifying their h
 
 The scraper can optionally use a pool of proxies for requests, verifying their health before usage. It supports rotating proxies automatically. The script allows saving extracted data in JSON or CSV format.
 
+---> System Architecture Diagram
+
 ```
                        +----------------------------------+
                        |      Quantumine Scraper          |
@@ -155,6 +157,8 @@ python quantumine_scraper.py --help
 ```
 
 Usage Examples and Workflow
+
+---> Internal Architecture Diagram
 
 ```
              +---------------------------+
