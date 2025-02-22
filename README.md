@@ -215,6 +215,7 @@ optional arguments:
   -t TIMEOUT, --timeout TIMEOUT
                             request timeout in seconds (default: 30)
 ```
+---> Configuration Parsing Flow
 
 ```
 [User CLI Input]
@@ -295,6 +296,7 @@ class QuantumProxyManager:
     method get_next_proxy():
         # returns next valid proxy from the cycle
 ```
+---> Proxy Rotation and Failure Handling Flow
 
 ```
 [Load Proxies from File/URL]
