@@ -40,6 +40,9 @@ The scraper can optionally use a pool of proxies for requests, verifying their h
 Static Scraping:
 Uses the requests library to fetch HTML content and BeautifulSoup for parsing. This method is effective for pages that deliver content in static HTML.
 
+Dynamic Scraping:
+Leverages Playwright for rendering JavaScript-driven pages. A headless Chromium instance is used to obtain fully rendered DOM content before parsing with BeautifulSoup.
+
 Requirements
 1. Python 3.8 or later.
 2. The following Python packages:
