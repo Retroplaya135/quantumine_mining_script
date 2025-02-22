@@ -424,3 +424,9 @@ The logging system records both successful operations and errors with timestamps
 [File Saved in 'output/' Directory]
 ```
 
+Key Points:
+
+The timestamped file naming ensures unique filenames for each run.
+The format check allows switching between CSV and JSON based on user preference.
+
+
