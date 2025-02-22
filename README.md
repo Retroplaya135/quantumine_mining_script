@@ -391,3 +391,9 @@ Robust error handling is essential for long-running scraping jobs. This flow sho
 [Return None or Trigger Fallback Mechanism]
 ```
 
+Key Points:
+
+Every external call (HTTP requests, page navigation) is wrapped in a try/except block.
+The logging system records both successful operations and errors with timestamps.
+
+
