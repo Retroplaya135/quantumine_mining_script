@@ -142,6 +142,12 @@ Yes          No
 
 ```
 
+Key Points:
+
+* The failure count per proxy is monitored; proxies that exceed a threshold are removed.
+* Logging provides traceability for proxy errors and decisions.
+
+
 
 Requirements
 1. Python 3.8 or later.
