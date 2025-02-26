@@ -102,6 +102,45 @@ Notes:
 
 The proxy manager is critical for avoiding IP bans. This flow explains how proxies are harvested, validated, rotated, and retired if they repeatedly fail.
 
+```
+[Load Proxies from File/URL]
+       │
+       ▼
+[Harvest Proxies (_harvest_proxies)]
+       │
+       ▼
+[Validate Proxies (_validate_proxies)]
+       │
+       ▼
+[Create Proxy Cycle Iterator]
+       │
+       ▼
+[get_next_proxy() Called for Each Request]
+       │
+       ▼
+[Use Proxy for Request]
+       │
+       ▼
+[Did Request Succeed?]
+       │
+ ┌─────┴─────┐
+ │           │
+Yes          No
+ │           │
+ ▼           ▼
+[Proceed]   [Log Error & Increment Failure Count]
+               │
+               ▼
+    [Threshold Exceeded?]
+               │
+        ┌──────┴──────┐
+        │             │
+       Yes           No
+        │             │
+        ▼             ▼
+[Remove Proxy from Cycle] [Keep Proxy for now]
+
+```
 
 
 Requirements
