@@ -214,6 +214,10 @@ Key Points:
 * The format check allows switching between CSV and JSON based on user preference.
 
 
+For dynamic scraping, the Playwright browser must be properly started, used, and closed. This flow ensures that browser resources are correctly managed.
+
+
+
 Requirements
 1. Python 3.8 or later.
 2. The following Python packages:
