@@ -93,6 +93,12 @@ Before any scraping starts, the system gathers configuration information. This f
 [Initialize TemporalScraper(config)]
 ```
 
+Notes:
+
+* This flow ensures all required parameters (like target URLs and proxy files) are provided.
+* Developers can extend this flow to also read from a JSON config file if needed.
+
+
 Requirements
 1. Python 3.8 or later.
 2. The following Python packages:
