@@ -245,6 +245,11 @@ For dynamic scraping, the Playwright browser must be properly started, used, and
 [Return HTML Content to Parser]
 ```
 
+Key Points:
+
+* Proper cleanup (closing contexts) prevents resource leakage.
+* Stealth JavaScript is executed immediately after navigation to reduce detection risks.
+
 
 Requirements
 1. Python 3.8 or later.
