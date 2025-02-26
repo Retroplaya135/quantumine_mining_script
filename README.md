@@ -73,6 +73,9 @@ Uses the requests library to fetch HTML content and BeautifulSoup for parsing. T
 Leverages Playwright for rendering JavaScript-driven pages. A headless Chromium instance is used to obtain fully rendered DOM content before parsing with BeautifulSoup.
 
 # How It Works
+ 
+
+Before any scraping starts, the system gathers configuration information. This flow covers how command-line arguments (and optional config files) are converted into the configuration dictionary passed to the scraper.
 
 ```
 [User CLI Input]
