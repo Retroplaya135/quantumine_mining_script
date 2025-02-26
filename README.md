@@ -179,6 +179,35 @@ Key Points:
 * Every external call (HTTP requests, page navigation) is wrapped in a try/except block.
 * The logging system records both successful operations and errors with timestamps.
 
+
+After data extraction, results are stored on disk. This flow details how output is formatted and written.
+
+```
+[Aggregated Results Ready]
+       │
+       ▼
+[Call save_results()]
+       │
+       ▼
+[Check: Is Results Empty?]
+       │
+       ▼
+[Create Output Directory if Not Exists]
+       │
+       ▼
+[Generate Timestamped Filename]
+       │
+       ▼
+[Check Output Format (CSV or JSON)]
+       │
+       ├──────────── CSV ────────────┐
+       │                             │
+       ▼                             ▼
+[Write CSV File]             [Write JSON File]
+       │                             │
+       ▼                             ▼
+[File Saved in 'output/' Directory]
+```
 Requirements
 1. Python 3.8 or later.
 2. The following Python packages:
