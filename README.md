@@ -72,7 +72,23 @@ Uses the requests library to fetch HTML content and BeautifulSoup for parsing. T
 * Dynamic Scraping:
 Leverages Playwright for rendering JavaScript-driven pages. A headless Chromium instance is used to obtain fully rendered DOM content before parsing with BeautifulSoup.
 
+# How It Works
 
+```
+[User CLI Input]
+       │
+       ▼
+[parse_args() Function]
+       │
+       ▼
+[Generate Configuration Dictionary]
+       │         ┌────────────────────┐
+       │         │Command-line Flags  │
+       │         │(URLs, timeout, etc.)│
+       │         └────────────────────┘
+       ▼
+[Initialize TemporalScraper(config)]
+```
 
 Requirements
 1. Python 3.8 or later.
