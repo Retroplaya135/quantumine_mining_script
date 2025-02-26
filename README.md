@@ -208,6 +208,12 @@ After data extraction, results are stored on disk. This flow details how output 
        ▼                             ▼
 [File Saved in 'output/' Directory]
 ```
+Key Points:
+
+* The timestamped file naming ensures unique filenames for each run.
+* The format check allows switching between CSV and JSON based on user preference.
+
+
 Requirements
 1. Python 3.8 or later.
 2. The following Python packages:
