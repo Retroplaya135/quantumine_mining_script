@@ -217,6 +217,34 @@ Key Points:
 For dynamic scraping, the Playwright browser must be properly started, used, and closed. This flow ensures that browser resources are correctly managed.
 
 
+```
+[Dynamic Mode Invoked]
+       │
+       ▼
+[Call _init_playwright()]
+       │
+       ▼
+[Launch Headless Browser with Stealth Args]
+       │
+       ▼
+[Create New Browser Context (Optional Proxy Setup)]
+       │
+       ▼
+[Open New Page and Navigate to URL]
+       │
+       ▼
+[Execute Stealth JavaScript (e.g., modify navigator.webdriver)]
+       │
+       ▼
+[Extract Page Content]
+       │
+       ▼
+[Close Browser Context]
+       │
+       ▼
+[Return HTML Content to Parser]
+```
+
 
 Requirements
 1. Python 3.8 or later.
