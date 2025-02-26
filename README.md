@@ -99,6 +99,11 @@ Notes:
 * Developers can extend this flow to also read from a JSON config file if needed.
 
 
+
+The proxy manager is critical for avoiding IP bans. This flow explains how proxies are harvested, validated, rotated, and retired if they repeatedly fail.
+
+
+
 Requirements
 1. Python 3.8 or later.
 2. The following Python packages:
