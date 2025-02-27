@@ -671,3 +671,8 @@ The current data extraction logic is a placeholder. This diagram shows how an ML
                                    ▼
                            [Return Default Extracted Data]
 ```
+
+Key Points:
+
+* The ML integration branch is clearly marked as a placeholder.
+* Developers are encouraged to replace the default extraction logic with custom ML models when ready.
