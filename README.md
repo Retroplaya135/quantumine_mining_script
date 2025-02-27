@@ -652,3 +652,22 @@ Stealth JavaScript is executed immediately after navigatio
 6. Future ML Integration Flow (Neuroscraping Engine Placeholder)
 The current data extraction logic is a placeholder. This diagram shows how an ML-based approach might be integrated.
 
+```
+[harvest_data(soup) Invoked]
+       │
+       ▼
+[Check for Custom ML Model]
+       │
+       ├────────── Yes ──────────► [Apply ML Model for Pattern Detection]
+       │                           │
+       │                           ▼
+       │                   [Extract Data Using Model]
+       │                           │
+       │                           ▼
+       │                    [Return ML-Extracted Data]
+       │
+       └────────── No ───────────► [Default Extraction: Extract <a> Tags]
+                                   │
+                                   ▼
+                           [Return Default Extracted Data]
+```
