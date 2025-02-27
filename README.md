@@ -548,6 +548,7 @@ playwright install
 ```
 
 Error Handling and Logging Flow:
+
 Robust error handling is essential for long-running scraping jobs. This flow shows how exceptions are captured and logged.
 
 ---> Error Handling and Logging Flow
@@ -578,8 +579,8 @@ Robust error handling is essential for long-running scraping jobs. This flow sho
 
 Key Points:
 
-Every external call (HTTP requests, page navigation) is wrapped in a try/except block.
-The logging system records both successful operations and errors with timestamps.
+* Every external call (HTTP requests, page navigation) is wrapped in a try/except block.
+* The logging system records both successful operations and errors with timestamps.
 
 ---> Output Saving and File Management Flow
 
@@ -612,8 +613,8 @@ The logging system records both successful operations and errors with timestamps
 
 Key Points:
 
-The timestamped file naming ensures unique filenames for each run.
-The format check allows switching between CSV and JSON based on user preference.
+* The timestamped file naming ensures unique filenames for each run.
+* The format check allows switching between CSV and JSON based on user preference.
 
 ---> Browser Initialization and Cleanup Flow (Dynamic Scraping)
 
@@ -646,8 +647,8 @@ The format check allows switching between CSV and JSON based on user preference.
 ```
 Key Points:
 
-Proper cleanup (closing contexts) prevents resource leakage.
-Stealth JavaScript is executed immediately after navigatio
+* Proper cleanup (closing contexts) prevents resource leakage.
+* Stealth JavaScript is executed immediately after navigatio
 
 6. Future ML Integration Flow (Neuroscraping Engine Placeholder)
 The current data extraction logic is a placeholder. This diagram shows how an ML-based approach might be integrated.
