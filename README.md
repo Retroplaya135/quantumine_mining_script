@@ -281,7 +281,7 @@ Below are very explicit instructions that allow any user or developer to set up 
 
 If using GitHub (for example), clone the repository:
 
-Basic Static Scraping
+* Basic Static Scraping
 
 ```
 python quantumine_scraper.py -u https://example.com
@@ -294,13 +294,13 @@ cd quantumine_mining_script
 Create and Activate a Virtual Environment
 This step isolates dependencies from your system-wide Python installations.
 
-On Linux/Mac:
+* On Linux/Mac:
 ```
 python3 -m venv venv
 source venv/bin/activate
 ```
 
-On Windows (Command Prompt):
+* On Windows (Command Prompt):
 
 ```
 python -m venv venv
@@ -339,7 +339,7 @@ Execute:
 python quantumine_scraper.py --help
 ```
 
-Usage Examples and Workflow
+* Usage Examples and Workflow
 
 ---> Internal Architecture Diagram
 
@@ -382,7 +382,7 @@ Usage Examples and Workflow
              +---------------------------+
 ```
 
-Command-Line Flags
+* Command-Line Flags
 
 ```
 usage: quantumine_scraper.py [-h] -u URLS [URLS ...] [-d] [-f {csv,json}] [-p PROXY_FILE] [-t TIMEOUT]
@@ -427,7 +427,7 @@ python quantumine_scraper.py -u https://example.com
 ----> Extracts all anchor tags with href attributes.
 ----> Saves the results to output/results_<timestamp>.csv by default.
 
-Dynamic (JavaScript) Scraping
+* Dynamic (JavaScript) Scraping
 
 ```
 python quantumine_scraper.py -u https://example.com -d
@@ -457,9 +457,9 @@ python quantumine_scraper.py -u https://example.com -t 60
 ```
 Increases the per-request timeout to 60 seconds.
 
-Internal Architecture Explanation
+---> Internal Architecture Explanation
 
-Quantumine Scraper is composed of multiple classes and methods that cooperate. A simplified pseudo-code representation follows.
+Q* uantumine Scraper is composed of multiple classes and methods that cooperate. A simplified pseudo-code representation follows.
 
 ```
 main():
@@ -532,7 +532,8 @@ Customization and Placeholder Logic
 
 * Machine Learning Integration: In harvest_data, you might include a classifier or named entity recognition system to dynamically identify product titles, prices, or relevant text blocks. The current snippet is purely a placeholder showing how an expanded method might be plugged in.
 * Proxy Validation: The _is_valid_proxy method is intentionally simplistic. For production systems, you may want to integrate more rigorous tests (location-based checks, speed tests, or usage-based blacklisting).
-* Scraping Logic: If you need advanced selectors (e.g., scraping tables, forms, or JSON embedded in the DOM), adapt _scrape_static, _scrape_dynamic, or the harvest_data method. You could also intercept network requests in Playwright to capture XHR data.
+* Scraping Logic: If you need advanced selectors (e.g., scraping tables, forms, or JSON embedded in the DOM), adapt _scrape_static, _scrape_dynamic, or the harvest_data method.
+* You could also intercept network requests in Playwright to capture XHR data.
 
 
 ## Example Deployment Scenario
@@ -542,7 +543,8 @@ Below is one possible approach to deploying Quantumine Scraper on a remote serve
 * Prepare a Server
 A typical Linux-based system (e.g., Ubuntu 20.04) with Python 3.8+ installed.
 * Ensure enough RAM if you plan to run many concurrent Playwright sessions.
-Clone and Configure
+  
+* Clone and Configure
   
 ```
 git clone https://github.com/youruser/quantumine_scraper.git
@@ -656,7 +658,7 @@ Key Points:
 * Proper cleanup (closing contexts) prevents resource leakage.
 * Stealth JavaScript is executed immediately after navigatio
 
-6. Future ML Integration Flow (Neuroscraping Engine Placeholder)
+---> Future ML Integration Flow (Neuroscraping Engine Placeholder)
 The current data extraction logic is a placeholder. This diagram shows how an ML-based approach might be integrated.
 
 ```
