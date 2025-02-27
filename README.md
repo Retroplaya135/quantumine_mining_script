@@ -648,3 +648,7 @@ Key Points:
 
 Proper cleanup (closing contexts) prevents resource leakage.
 Stealth JavaScript is executed immediately after navigatio
+
+6. Future ML Integration Flow (Neuroscraping Engine Placeholder)
+The current data extraction logic is a placeholder. This diagram shows how an ML-based approach might be integrated.
+
