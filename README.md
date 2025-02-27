@@ -74,6 +74,7 @@ Leverages Playwright for rendering JavaScript-driven pages. A headless Chromium 
 
 # How It Works
  
+---> Configuration Parsing Flow
 
 Before any scraping starts, the system gathers configuration information. This flow covers how command-line arguments (and optional config files) are converted into the configuration dictionary passed to the scraper.
 
@@ -101,6 +102,8 @@ Notes:
 
 
 The proxy manager is critical for avoiding IP bans. This flow explains how proxies are harvested, validated, rotated, and retired if they repeatedly fail.
+
+---> Proxy Rotation and Failure Handling Flow
 
 ```
 [Load Proxies from File/URL]
