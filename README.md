@@ -153,6 +153,8 @@ Key Points:
 
 Robust error handling is essential for long-running scraping jobs. This flow shows how exceptions are captured and logged.
 
+--->  Error Handling and Logging Flow
+
 ```
 [Execute HTTP Request / Browser Navigation]
        │
@@ -182,6 +184,7 @@ Key Points:
 * Every external call (HTTP requests, page navigation) is wrapped in a try/except block.
 * The logging system records both successful operations and errors with timestamps.
 
+--->  Output Saving and File Management Flow
 
 After data extraction, results are stored on disk. This flow details how output is formatted and written.
 
